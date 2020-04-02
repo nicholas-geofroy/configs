@@ -32,6 +32,7 @@
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
 'atom-text-editor':
   'alt-left': 'editor:move-to-beginning-of-line'
+  'alt-backspace': 'editor:delete-line'
   'alt-right': 'editor:move-to-end-of-line'
   'alt-shift-left': 'editor:select-to-beginning-of-line'
   'alt-shift-right': 'editor:select-to-end-of-line'
