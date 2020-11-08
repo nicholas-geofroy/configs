@@ -36,6 +36,10 @@
   'alt-right': 'editor:move-to-end-of-line'
   'alt-shift-left': 'editor:select-to-beginning-of-line'
   'alt-shift-right': 'editor:select-to-end-of-line'
+  'ctrl->':'window:focus-next-pane'
+  'ctrl-<':'window:focus-previous-pane'
 'body':
   'ctrl-alt-right': 'pane:show-next-item'
+  'alt->': 'pane:show-next-item'
   'ctrl-alt-left': 'pane:show-previous-item'
+  'alt-<': 'pane:show-previous-item'
