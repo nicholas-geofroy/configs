@@ -15,6 +15,8 @@ antigen bundle pip
 antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle agkozak/zsh-z
+
 antigen apply
 
 # User configuration
@@ -27,4 +29,5 @@ antigen apply
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+zstyle ':completion:*' menu select
 alias python="python3"

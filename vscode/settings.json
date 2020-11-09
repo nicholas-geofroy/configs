@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Oceanic Next (dimmed bg)",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "files.watcherExclude": {
+        "**/env/**": true
+    },
+    "window.zoomLevel": 0,
+    "search.exclude": {
+        "**/env": true
+    }
+}
