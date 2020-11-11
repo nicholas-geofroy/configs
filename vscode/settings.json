@@ -7,5 +7,6 @@
     "window.zoomLevel": 0,
     "search.exclude": {
         "**/env": true
-    }
+    },
+    "explorer.confirmDragAndDrop": false
 }

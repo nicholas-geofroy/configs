@@ -1,0 +1,5 @@
+code --install-extension eamodio.gitlens
+code --install-extension James-Yu.latex-workshop
+code --install-extension mgmcdermott.vscode-language-babel
+code --install-extension ms-python.python
+code --install-extension naumovs.theme-oceanicnext
