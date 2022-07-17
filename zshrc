@@ -2,13 +2,14 @@ function virtualenv_info {
 [ $VIRTUAL_ENV ] && echo ‘(‘`basename $VIRTUAL_ENV`’) ‘
 }
 
-source ~/Workspace/configs/antigen.zsh
+source ~/configs/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
 # Load the theme
-antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
+antigen theme random
+
 
 antigen bundle git
 antigen bundle pip
@@ -30,4 +31,3 @@ antigen apply
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 zstyle ':completion:*' menu select
-alias python="python3"
