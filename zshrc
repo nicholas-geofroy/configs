@@ -39,8 +39,6 @@ eval "$(starship init zsh)"
 
 zstyle ':completion:*' menu select
 
-export PATH=$PATH:/usr/local/go/bin:/home/nickgeofroy/go/bin
-
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -70,7 +68,11 @@ ssh-add ~/.ssh/github_ed25519 &> /dev/null
 export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf &>/dev/null):0 # in WSL 2
 export LIBGL_ALWAYS_INDIRECT=1
 
+# local bin
+export PATH="$PATH:$HOME/bin"
+
 alias oldvim=vim
 alias vi=nvim
 alias vim=nvim
 
+alias k=kubectl
