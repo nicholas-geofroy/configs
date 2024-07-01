@@ -1,6 +1,21 @@
 return {
     'christoomey/vim-tmux-navigator', -- work with tmux
     {
+        'nvim-treesitter/nvim-treesitter',
+        build = function ()
+            require("nvim-treesitter.install").update({ with_sync = true })()
+        end,
+        config = function ()
+            local configs = require("nvim-treesitter.configs")
+            configs.setup({
+                ensure_installed = { "lua", "vim", "vimdoc", "javascript", "html", "terraform", "go", "python", "rust" },
+                sync_install = false,
+                highlight = { enable = true },
+                indent = { enable = true },
+            })
+        end
+    },
+    {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.5',
         dependencies = {
