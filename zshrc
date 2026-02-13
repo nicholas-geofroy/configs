@@ -19,7 +19,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle agkozak/zsh-z
 antigen bundle nvm
 antigen bundle kiurchv/asdf.plugin.zsh
-antigen bundle docker
+# antigen bundle docker
 
 antigen apply
 
@@ -65,12 +65,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 #ssh
-ssh-add ~/.ssh/github_ed25519 &> /dev/null
-
-# WSL GUI config
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
-export LIBGL_ALWAYS_INDIRECT=1
-
+ssh-add ~/.ssh/github_key &> /dev/null
 
 # local bin
 export PATH="$PATH:$HOME/bin"

@@ -2,11 +2,12 @@ return {
     'christoomey/vim-tmux-navigator', -- work with tmux
     {
         'nvim-treesitter/nvim-treesitter',
+        lazy = false,
         build = function ()
             require("nvim-treesitter.install").update({ with_sync = true })()
         end,
         config = function ()
-            local configs = require("nvim-treesitter.configs")
+            local configs = require("nvim-treesitter.config")
             configs.setup({
                 ensure_installed = { "lua", "vim", "vimdoc", "javascript", "html", "terraform", "go", "python", "rust" },
                 sync_install = false,
@@ -17,11 +18,11 @@ return {
     },
     {
         'nvim-telescope/telescope.nvim',
-        tag = '0.1.5',
+        tag = 'v0.2.0',
         dependencies = {
             'nvim-lua/plenary.nvim'
         },
-        config = function() 
+        config = function()
             local ts = require('telescope.builtin')
             -- Find files using Telescope command-line sugar.
             vim.keymap.set('n', '<leader>ff', ts.find_files, {})
